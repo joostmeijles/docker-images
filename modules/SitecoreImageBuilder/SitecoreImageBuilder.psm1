@@ -396,7 +396,9 @@ function Initialize-BuildSpecifications
         "^sitecore-xp-base:(.*)$",
         "^sitecore-xp-xconnect:(.*)$",
         "^sitecore-xp-pse-(.*)-sqldev:(.*)$",
-        "^sitecore-xp-pse-(.*)-standalone:(.*)$"
+        "^sitecore-xp-pse-(.*)-standalone:(.*)$",
+        "^sitecore-xp-(.*):(.*)$", # Build XP before XC
+        "^sitecore-xc-(.*):(.*)$"
     )
 
     $patterns | ForEach-Object {
